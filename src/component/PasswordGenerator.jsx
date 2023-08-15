@@ -23,13 +23,21 @@ const PasswordGenerator = () => {
       const randomIndex = Math.floor(Math.random() * allowedChars.length);
       newPassword += allowedChars.charAt(randomIndex);
     }
-
     setPassword(newPassword);
   };
+  const copyToClipboard = () => {
+    const textarea = document.createElement('textarea');
+    textarea.value = password;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+  };
 
+  
   return (
-    <div>
-      <h2>Password Generator</h2>
+    <div className="password-generator">
+      <h1 className='bg-blue-500 text-red'>Lock Lingo</h1>
       <div>
         <label>Password Length:</label>
         <input
@@ -63,9 +71,11 @@ const PasswordGenerator = () => {
         />
       </div>
       <button onClick={generatePassword}>Generate Password</button>
+      
       <div>
         <h3>Generated Password:</h3>
         <p>{password}</p>
+        <button onClick={copyToClipboard}>Copy Password</button>
       </div>
     </div>
   );
