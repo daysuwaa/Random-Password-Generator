@@ -37,7 +37,7 @@ const PasswordGenerator = () => {
   
   return (
     <div className="password-generator">
-      <h1 className='bg-blue-500 text-red'>Lock Lingo</h1>
+      <h1 className='bg-purple'>Lock Lingo</h1>
       <div>
         <label>Password Length:</label>
         <input
