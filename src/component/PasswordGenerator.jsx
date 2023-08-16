@@ -38,7 +38,7 @@ const PasswordGenerator = () => {
 
   
   return (
-    <div className="pt-[8rem]">
+    <div className="pt-[6rem]">
       <div className="bg-blue-950 justify-center items-center mx-auto h-[30rem] p-8 text-white max-w-full">
         <h2 className="font-bold text-center text-2xl py-7">Instantly Generates random passwords</h2>
         <div className="">
