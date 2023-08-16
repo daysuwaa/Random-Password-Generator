@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Random-Password-Generator/static/css/main.47bfa72e.css",
+    "main.js": "/Random-Password-Generator/static/js/main.dea19a35.js",
+    "index.html": "/Random-Password-Generator/index.html",
+    "main.47bfa72e.css.map": "/Random-Password-Generator/static/css/main.47bfa72e.css.map",
+    "main.dea19a35.js.map": "/Random-Password-Generator/static/js/main.dea19a35.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47bfa72e.css",
+    "static/js/main.dea19a35.js"
+  ]
+}
