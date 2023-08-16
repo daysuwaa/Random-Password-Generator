@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Password from '../assets/password.jpeg'
 
 const PasswordGenerator = () => {
   const [password, setPassword] = useState('');
@@ -36,48 +37,28 @@ const PasswordGenerator = () => {
 
   
   return (
-    <div className="password-generator">
-      <h1 className='bg-purple'>Lock Lingo</h1>
-      <div>
-        <label>Password Length:</label>
-        <input
-          type="number"
-          value={length}
-          onChange={(e) => setLength(parseInt(e.target.value))}
-        />
-      </div>
-      <div>
-        <label>Include Uppercase:</label>
-        <input
-          type="checkbox"
-          checked={includeUppercase}
-          onChange={() => setIncludeUppercase(!includeUppercase)}
-        />
-      </div>
-      <div>
-        <label>Include Numbers:</label>
-        <input
-          type="checkbox"
-          checked={includeNumbers}
-          onChange={() => setIncludeNumbers(!includeNumbers)}
-        />
-      </div>
-      <div>
-        <label>Include Special Characters:</label>
-        <input
-          type="checkbox"
-          checked={includeSpecialChars}
-          onChange={() => setIncludeSpecialChars(!includeSpecialChars)}
-        />
-      </div>
-      <button onClick={generatePassword}>Generate Password</button>
-      
-      <div>
-        <h3>Generated Password:</h3>
+    <div>
+    <div className="flex flex-col md:flex-row">
+         
+      <div className="md:w-1/2 p-8 bg-white">
+       
+        <div>
+          {/* <label>Include Uppercase:</label> */}
+          {/* ... (other input fields) */}
+        </div>
+        <h2 className='font-bold text-center text-2xl pt-5'>Instantly Generates random passwords</h2>
+        <div className='pl-[10rem]'>
         <p>{password}</p>
-        <button onClick={copyToClipboard}>Copy Password</button>
+         <button onClick={generatePassword} className='bg-purple-400 h-14 w-[10rem] '>Generate Password</button>
+         <button onClick={copyToClipboard} className ='bg-purple-400 h-14 w-[10rem] ml-[10px]'>Copy Password</button>
+        </div>
+      </div>
+      <div className="md:w-1/2 p-4 flex justify-center items-center">
+        <img src={Password} alt='img' className='w-full' />
       </div>
     </div>
+    </div>
+
   );
 };
 
