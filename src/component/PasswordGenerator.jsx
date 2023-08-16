@@ -42,13 +42,13 @@ const PasswordGenerator = () => {
       <div className="bg-blue-950 justify-center items-center mx-auto h-[30rem] p-8 text-white max-w-full">
         <h2 className="font-bold text-center text-2xl py-7">Instantly Generates random passwords</h2>
         <div className="">
-          <p className="bg-gray-100 h-12 pt-3 text-center sm:w-[27rem] relative mx-auto w-[20rem]">
+          <p className="bg-gray-100 h-12 pt-3 text-center sm:w-[27rem] relative mx-auto w-[20rem] text-black font-bold">
             {password}
             <span className="absolute right-2 top-1/2 transform -translate-y-1/2 text-2xl">
               <AiOutlineCopy onClick={copyToClipboard} className="cursor-pointer text-black" />
             </span>
           </p>
-          <div className='py-2 ml-[5rem] sm:ml-[13rem] mt-4 lg:ml-[37rem] md:ml-[22rem]' >
+          <div className='py-2 ml-[9rem] sm:ml-[13rem] mt-4 lg:ml-[37rem] md:ml-[24rem]' >
           <button onClick={generatePassword} className="bg-white text-blue-700 h-14 w-[10rem] font-semibold ">
             Generate Password
           </button> </div>
