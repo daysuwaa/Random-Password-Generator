@@ -38,38 +38,67 @@ const PasswordGenerator = () => {
 
   
   return (
-    <div>
     <div className="pt-[8rem]">
-         
-      <div className=" bg-purple-500 lex justify-between items-center max-w-[1000px] mx-auto h-[30rem]">
-       
-        <div>
-          {/* <label>Include Uppercase:</label> */}
-          {/* ... (other input fields) */}
-        </div>
-        <h2 className='font-bold text-center text-2xl pt-5'>Instantly Generates random passwords</h2>
-        <div className='pl-[10rem]'>
-        {/* <p className='bg-gray-100 h-12 pt-3 text-center w-[30rem]'>{password}< AiOutlineCopy onClick={copyToClipboard} className =''>Copy Password </AiOutlineCopy> </p>
-        
-          */}
-          <p className="bg-gray-100 h-12 pt-3 text-center w-[30rem] relative">
+      <div className="bg-purple-400 justify-center items-center max-w-[1000px] mx-auto h-[30rem] p-8">
+        <h2 className="font-bold text-center text-2xl py-7">Instantly Generates random passwords</h2>
+        <div className="">
+          <p className="bg-gray-100 h-12 pt-3 text-center w-[30rem] relative mx-auto">
             {password}
-            <span className="absolute right-2 top-1/2 transform -translate-y-1/2">
+            <span className="absolute right-2 top-1/2 transform -translate-y-1/2 text-2xl">
               <AiOutlineCopy onClick={copyToClipboard} className="cursor-pointer" />
             </span>
           </p>
-          <button onClick={generatePassword} className='bg-purple-400 h-14 w-[10rem] '>Generate Password</button>
-
-
+          <button onClick={generatePassword} className="bg-purple-500 h-14 w-[10rem]  ml-[25rem] mt-4">
+            Generate Password
+          </button>
         </div>
-      </div>
-      <div className="md:w-1/2 p-4 flex justify-center items-center">
-        {/* <img src={Password} alt='img' className='w-full' /> */}
-      </div>
-    </div>
-    </div>
 
+        <div className="flex items-center justify-center space-x-4">
+  <div>
+    <label>Password Length:</label>
+    <input
+      type="number"
+      value={length}
+      onChange={(e) => setLength(parseInt(e.target.value))}
+    />
+  </div>
+  <div>
+    <label>Include Uppercase:</label>
+    <input
+      type="checkbox"
+      checked={includeUppercase}
+      onChange={() => setIncludeUppercase(!includeUppercase)}
+    />
+  </div>
+  <div>
+    <label>Include Numbers:</label>
+    <input
+      type="checkbox"
+      checked={includeNumbers}
+      onChange={() => setIncludeNumbers(!includeNumbers)}
+    />
+  </div>
+  <div>
+    <label>Include Special Characters:</label>
+    <input
+      type="checkbox"
+      checked={includeSpecialChars}
+      onChange={() => setIncludeSpecialChars(!includeSpecialChars)}
+    />
+  </div>
+</div>
+</div>
+      </div>
+
+     
   );
 };
 
 export default PasswordGenerator;
+
+
+
+
+
+
+   
