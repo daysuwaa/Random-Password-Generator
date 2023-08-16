@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Random-Password-Generator/static/css/main.47bfa72e.css",
-    "main.js": "/Random-Password-Generator/static/js/main.dea19a35.js",
+    "main.css": "/Random-Password-Generator/static/css/main.894ea5d4.css",
+    "main.js": "/Random-Password-Generator/static/js/main.95208dee.js",
     "index.html": "/Random-Password-Generator/index.html",
-    "main.47bfa72e.css.map": "/Random-Password-Generator/static/css/main.47bfa72e.css.map",
-    "main.dea19a35.js.map": "/Random-Password-Generator/static/js/main.dea19a35.js.map"
+    "main.894ea5d4.css.map": "/Random-Password-Generator/static/css/main.894ea5d4.css.map",
+    "main.95208dee.js.map": "/Random-Password-Generator/static/js/main.95208dee.js.map"
   },
   "entrypoints": [
-    "static/css/main.47bfa72e.css",
-    "static/js/main.dea19a35.js"
+    "static/css/main.894ea5d4.css",
+    "static/js/main.95208dee.js"
   ]
 }
