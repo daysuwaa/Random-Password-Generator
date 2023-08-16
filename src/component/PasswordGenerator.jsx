@@ -48,13 +48,13 @@ const PasswordGenerator = () => {
               <AiOutlineCopy onClick={copyToClipboard} className="cursor-pointer text-black" />
             </span>
           </p>
-          <div className='py-2 ml-[7rem] sm:ml-[13rem] mt-4 lg:ml-[37rem] md:ml-[22rem]' >
+          <div className='py-2 ml-[9rem] sm:ml-[13rem] mt-4 lg:ml-[37rem] md:ml-[22rem]' >
           <button onClick={generatePassword} className="bg-white text-blue-700 h-14 w-[10rem] font-semibold ">
             Generate Password
           </button> </div>
         </div>
 
-        <div className="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-4 font-light text-md lg:ml-[18rem] pt-4 md:ml-[5rem]">
+        <div className="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-4 font-light text-md lg:ml-[18rem] pt-4 md:ml-[7rem]">
   <div>
     <label className=''>Password Length:</label>
     <input
