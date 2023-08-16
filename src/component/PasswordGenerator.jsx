@@ -61,7 +61,7 @@ const PasswordGenerator = () => {
       type="number"
       value={length}
       onChange={(e) => setLength(parseInt(e.target.value))}
-      className='w-12'
+      className='w-12 text-black'
     />
   </div>
   <div>
