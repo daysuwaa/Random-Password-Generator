@@ -48,7 +48,7 @@ const PasswordGenerator = () => {
               <AiOutlineCopy onClick={copyToClipboard} className="cursor-pointer text-black" />
             </span>
           </p>
-          <div className='py-2 ml-[7rem] sm:ml-[13rem] mt-4 lg:ml-[37rem] md:ml-[24rem]' >
+          <div className='py-2 ml-[5rem] sm:ml-[13rem] mt-4 lg:ml-[37rem] md:ml-[24rem]' >
           <button onClick={generatePassword} className="bg-white text-blue-700 h-14 w-[10rem] font-semibold ">
             Generate Password
           </button> </div>
