@@ -49,10 +49,10 @@ const PasswordGenerator = () => {
             </span>
           </p>
           <div className="flex justify-center mt-4">
-  <button onClick={generatePassword} className="bg-white text-blue-700 h-14 w-[10rem] font-semibold">
-    Generate Password
-  </button>
-</div>
+          <button onClick={generatePassword} className="bg-white text-blue-700 h-14 w-[10rem] font-semibold">
+           Generate Password
+          </button>
+        </div>
 
         </div>
 
