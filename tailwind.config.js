@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        customFont: ['Dancing Script', 'cursive'],
+        customFont: ['Bacasime Antique', 'serif']
       },
     },
   },

@@ -5,7 +5,7 @@ const Nav = () => {
     <div>
         <h1 
         className=
-              "bg-purple-400 h-14 text-center pt-3 text-xl font-bold">
+              "bg-purple-400 h-14 text-center pt-3 text-xl font-customFont">
             Lock Lingo
         </h1>
     </div>

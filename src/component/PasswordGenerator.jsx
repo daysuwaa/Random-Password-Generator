@@ -39,7 +39,7 @@ const PasswordGenerator = () => {
   
   return (
     <div className="pt-[8rem]">
-      <div className="bg-purple-400 justify-center items-center max-w-[1000px] mx-auto h-[30rem] p-8">
+      <div className="bg-blue-100 justify-center items-center max-w-[1000px] mx-auto h-[30rem] p-8">
         <h2 className="font-bold text-center text-2xl py-7">Instantly Generates random passwords</h2>
         <div className="">
           <p className="bg-gray-100 h-12 pt-3 text-center w-[27rem] relative mx-auto">
@@ -54,13 +54,14 @@ const PasswordGenerator = () => {
           </button> </div>
         </div>
 
-        <div className="flex items-center justify-center space-x-4 py-6">
+        <div className="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-4 font-light">
   <div>
-    <label>Password Length:</label>
+    <label className=''>Password Length:</label>
     <input
       type="number"
       value={length}
       onChange={(e) => setLength(parseInt(e.target.value))}
+      className='w-12'
     />
   </div>
   <div>
@@ -89,9 +90,7 @@ const PasswordGenerator = () => {
   </div>
 </div>
 </div>
-      </div>
-
-     
+</div>
   );
 };
 
