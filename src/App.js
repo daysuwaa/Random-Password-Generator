@@ -7,6 +7,8 @@ function App() {
     <div>
       <Nav/>
      <PasswordGenerator/>
+     <br></br>
+     <br></br>
      <Footer/>
     
     </div>
