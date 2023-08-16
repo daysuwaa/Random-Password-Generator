@@ -54,7 +54,7 @@ const PasswordGenerator = () => {
           </button> </div>
         </div>
 
-        <div className="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-4 font-light text-md lg:ml-[18rem] pt-4 md:ml-[7rem]">
+        <div className="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-4 font-light text-md lg:ml-[18rem] pt-4 md:ml-[5rem]">
   <div>
     <label className=''>Password Length:</label>
     <input
